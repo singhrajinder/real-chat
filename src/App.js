@@ -7,6 +7,7 @@ function App() {
       <section>
         <div class="container px-5 py-24 mx-auto">
           <h1 className="text-3xl font-bold underline">Hello world!</h1>
+          <h2>Hello</h2>
         </div>
       </section>
     </>
