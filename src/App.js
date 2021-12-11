@@ -1,15 +1,12 @@
-import logo from "./logo.svg";
-import "./App.css";
-
+/* eslint-disable no-undef */
+import React from "react";
+// import Login from "./Component/Login/login";
+import RealChat from "./RealChat/real-chat";
 function App() {
   return (
     <>
-      <section>
-        <div class="container px-5 py-24 mx-auto">
-          <h1 className="text-3xl font-bold underline">Hello world!</h1>
-          <h2>Hello</h2>
-        </div>
-      </section>
+      {/* <Login /> */}
+      <RealChat />
     </>
   );
 }
