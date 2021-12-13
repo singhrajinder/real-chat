@@ -16,6 +16,10 @@
     left: 0;
     bottom: 0;
   }
+  em {
+    color: #444;
+    font-size: 20px;
+  }
 }
 
 body {

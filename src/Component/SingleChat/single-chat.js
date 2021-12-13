@@ -1,19 +1,33 @@
 import React from "react";
-function Chat() {
+function SingleChat() {
   return (
     <>
       <section className="bg-hero-pattern bg-cover h-screen ">
         <div class="container px-5 py-24 mx-auto">
           <div className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:m-auto w-full   mt-8 md:mt-0 shadow-2xl">
             <div className="flex justify-between items-center p-4 shadow-2xl">
-              <h4 className="text-xl font-semibold">Messenger</h4>
+              <a href="/">
+                <em class="bx bx-arrow-back"></em>
+              </a>
               <div className="flex justify-between items-center space-x-4 ...">
-                <a href="/">
-                  <em class="bx bx-search-alt-2"></em>
-                </a>
-                <a href="/">
-                  <em class="bx bxs-plus-square"></em>
-                </a>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <div className="name">
+                  <h4 className="text-xl font-semibold">Rajinder Singh</h4>
+                  <p className="text-base text-gray-400">
+                    Testing Testing Testing Testing Testing
+                  </p>
+                </div>
               </div>
             </div>
             <div className="flex justify-between p-4 border-b">
@@ -87,4 +101,4 @@ function Chat() {
   );
 }
 
-export default Chat;
+export default SingleChat;
