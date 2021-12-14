@@ -11,6 +11,9 @@ module.exports = {
       boxShadow: {
         "3xl": "0 4px 20px 0 rgb(31 38 135 / 37%)",
       },
+      height:{
+        'h-vh': 'calc( 100vh - 80px )',
+      }
     },
   },
   plugins: [],

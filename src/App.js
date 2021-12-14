@@ -1,19 +1,31 @@
 /* eslint-disable no-undef */
 import React from "react";
-import Login from "./Component/Login/login";
-import {BrowserRouter as Router ,Routes,  Route , } from 'react-router-dom';
+import SignUp from "./Component/SignUp";
+import { Routes, Route } from "react-router-dom";
+import Login from "../src/login";
 import RealChat from "./RealChat/real-chat";
-function App() {
+import PrivateRoute from "./Component/PrivateRoute";
+import Header from "./Component/Header";
+
+const App = () => {
   return (
     <>
-    <Router>
-    <Routes>  
-         <Route path="/" exact  element = {<Login/>} />
-         <Route path="/chat" exact  element = {<RealChat/>} />
-         </Routes>
-      </Router>
+      <Header />
+      <Routes>
+        <Route path="/login" exact element={<Login />} />
+        <Route
+          path="/chat"
+          exact
+          element={
+            <PrivateRoute>
+              <RealChat />
+            </PrivateRoute>
+          }
+        />
+        <Route path="/" exact element={<SignUp />} />
+      </Routes>
     </>
   );
-}
+};
 
 export default App;
